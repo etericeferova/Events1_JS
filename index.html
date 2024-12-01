@@ -3,9 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW1</title>
+    <title>Список книг</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      li:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
   </head>
   <body>
-    <script src="script.js"></script>
+    <h1>Список книг</h1>
+    <ul id="bookList">
+      <li>1.Размышления о гильотине</li>
+      <li>2.Хроники капитана Блада</li>
+      <li>3.Великий Гетсби</li>
+      <li>4.Портрет Дориана Грея</li>
+      <li>5.Гарри Поттер</li>
+    </ul>
+
+    <script src="script6.js"</script>
   </body>
 </html>
