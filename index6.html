@@ -3,10 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OOP-2</title>
+    <title>Guess the number</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        text-align: center;
+      }
+      .container {
+        max-width: 400px;
+        margin: auto;
+      }
+      input,
+      button {
+        padding: 10px;
+        font-size: 1em;
+        margin: 10px 0;
+      }
+      button {
+        cursor: pointer;
+      }
+      .result {
+        font-size: 1.2em;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div id="styled-employee-table"></div>
+    <div class="container">
+      <h1>Game "Guess the number"</h1>
+      <p>Number is in diapazon from 1 to 100. Try to guess!</p>
+      <input
+        type="number"
+        id="guess"
+        min="1"
+        max="100"
+        placeholder="Enter the number:"
+      />
+      <button id="check-button">Check</button>
+      <div class="result" id="result"></div>
+      <p>Attempt's count: <span id="attempts">0</span></p>
+      <button id="reset-button">Reset statistics</button>
+    </div>
 
     <script src="script6.js"></script>
   </body>
